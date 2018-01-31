@@ -1,0 +1,9 @@
+create schema `itmag11`;
+DROP DATABASE IF EXISTS itmag;
+CREATE DATABASE itmag DEFAULT CHARACTER SET utf8;
+
+USE itmag;
+
+GRANT ALL ON itmag.* TO 'root'@'%' IDENTIFIED BY 'root';
+
+FLUSH PRIVILEGES;
